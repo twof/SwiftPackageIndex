@@ -1,0 +1,9 @@
+#set("title") { Hello! }
+
+#set("body") {
+    <ul id="myUL">
+        #for(package in packages) { <li><a href="/packages/#(package.name)">#(package.name)</a></li> }
+    </ul>
+}
+
+#embed("base")

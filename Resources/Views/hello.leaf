@@ -1,7 +1,10 @@
-#set("title") { Hello, #(name)! }
+#set("title") { Hello! }
 
 #set("body") {
-	<h1>Hello, #(name)!</h1>
+    <form action="\search" enctype="multipart/form-data" method="post">
+	    Search: <input type="text" name="q">
+        <input type="submit" value="Submit">
+    </form>
 }
 
 #embed("base")

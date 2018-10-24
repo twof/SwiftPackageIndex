@@ -1,0 +1,8 @@
+
+#set("title") { Hello! }
+
+#set("body") {
+    <h1>#(package.name)</h1>
+}
+
+#embed("base")
